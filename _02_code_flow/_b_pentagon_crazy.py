@@ -21,19 +21,26 @@ if __name__ == '__main__':
     colors = ('red', 'blue', 'green', 'yellow', 'orange')
     
     # Make a new turtle
-    
+    Mikey = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    Mikey.shape('turtle')
     # Set the turtle speed to max (0)
-    
+    Mikey.speed(0)
     # Set the turtle width to 1
-    
+    Mikey.width(1)
     # Create a variable to hold the number of sides in a pentagon
-    
+    num=5
     # Create a variable to be the angle of 360 divided by the sides variable
-    
+    angle=360/5
     # Use a for loop to repeat ALL the following lines of code 360 times. 
-        
+    for i in range(360):
+        if i==100:
+            Mikey.width(2)
+        if i==200:
+            Mikey.width(3)
+        Mikey.pencolor(get_next_color(i))
+        Mikey.forward(i)
+        Mikey.right(90+1)
         # If the loop variable (i) is equal to 100, set the turtle width to 2
         
         # If the loop variable (i) is equal to 200, set the turtle width to 3

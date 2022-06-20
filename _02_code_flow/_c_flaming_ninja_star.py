@@ -21,20 +21,28 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    Leonardo = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    Leonardo.shape('turtle')
     # Set the turtle width to 2
-    
+    Leonardo.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    Leonardo.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
         
         # Set the turtle .fillcolor() to orange
-        
+    Leonardo.fillcolor('orange')
         # Call the turtle .begin_fill() function
-        
+    Leonardo.begin_fill()
+    Leonardo.left(45)
+    Leonardo.forward(64)
+    Leonardo.forward(flameSize)
+    Leonardo.right(170)
+    Leonardo.forward(flameSize)
+    Leonardo.right(62)
+    Leonardo.forward(baseSize)
+    Leonardo.end_fill()
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
         
