@@ -34,15 +34,17 @@ if __name__ == '__main__':
         # Set the turtle .fillcolor() to orange
     Leonardo.fillcolor('orange')
         # Call the turtle .begin_fill() function
-    Leonardo.begin_fill()
-    Leonardo.left(45)
-    Leonardo.forward(64)
-    Leonardo.forward(flameSize)
-    Leonardo.right(170)
-    Leonardo.forward(flameSize)
-    Leonardo.right(62)
-    Leonardo.forward(baseSize)
-    Leonardo.end_fill()
+    for i in range(25):
+        Leonardo.begin_fill()
+        Leonardo.left(45)
+        Leonardo.forward(64)
+        Leonardo.forward(flameSize)
+        Leonardo.right(170)
+        Leonardo.forward(flameSize)
+        Leonardo.right(62)
+        Leonardo.forward(baseSize)
+        Leonardo.end_fill()
+        Leonardo.hideturtle()
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
         

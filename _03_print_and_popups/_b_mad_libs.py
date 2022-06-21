@@ -3,22 +3,22 @@ from tkinter import messagebox, simpledialog, Tk
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
 if __name__ == '__main__':
     # Make a new window variable, window = Tk()
-
+    window = Tk()
     # Hide the window using the window's .withdraw() method
-
+    window.withdraw()
     # Put this sentence in a pop-up message box:
     # "If you find yourself having to cross a piranha-infested river, here's how to do it..."
-
+    messagebox.showinfo(title='MadLibs', message="If you find yourself having to cross a piranha-infested river, here's how to do it...")
     # Get the player to enter an adjective
-
+    adjective = simpledialog.askstring(title='Step 1', prompt="Type in an adjective")
     # Get the player to enter a type of liquid
-
+    liquid = simpledialog.askstring(title='Step 2', prompt="Type in a type of liquid")
     # Get the player to enter a body part
-
+    body_part = simpledialog.askstring(title='Step 3', prompt="Type in a type of body part")
     # Get the player to enter a verb
-
+    verb = simpledialog.askstring(title='Step 4', prompt="Type in a verb")
     # Get the player to enter a place
-
+    place= simpledialog.askstring(title='Final step', prompt="Type in a place you want to go into")
     # The story below has has been written as a group of Strings joined
     # together by + signs. The story contains place holders, indicated
     # by [** **] which you need to replace with the values entered by the
